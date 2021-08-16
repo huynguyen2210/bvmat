@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./assets/images/menu-logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div><img class="img-fluid" src="./assets/images/banner-lasik@2x.png" alt=""></div>
+            <div class="container">
+                <div class="banner__form">
+                    <div class="banner__form--title">Đăng ký lịch khám</div>
+                    <form>
+                        <input type="text" class="form-control" id="inputName" aria-describedby="name" placeholder="Họ và Tên" required>
+                        <input type="text" class="form-control" id="inputMessage" aria-describedby="message" placeholder="Lời nhắn" required>
+                        <input type="tel" class="form-control" id="inputTel" aria-describedby="tel" placeholder="Điện thoại" required>
+                        <input type="text" class="form-control" id="inputAddr" aria-describedby="address" placeholder="Địa chỉ" required>
+                        <div class="form-group styled-select">
+                            <select class="select2-box form-control" id="type-question-select" required>
+                                <option class="disable-opt" value="" selected disabled hidden>Nơi đăng ký khám</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="banner__popup d-flex flex-column justify-content-center align-items-center">
+                <div><img src="./assets/images/phone-popup.png" alt=""></div>
+                <div><img src="./assets/images/messenger-popup.png" alt=""></div>
+            </div>
+        </section>
+        <section class="surgicalMethod">
+            <div class="container">
+                <div class="surgicalMethod__subcontent">Hệ thống bệnh viện Mắt Sài Gòn với đội ngũ bác sĩ nhiều năm kinh nghiệm, sử dụng các công nghệ phẫu thuật Laser hiện đại, bảo hành 12 tháng, tái khám miễn phí. Bệnh viện đang áp dụng nhiều chương trình ưu đãi mổ cận thi, loạn thị, hỗ trợ
+                    bạn sáng tầm nhìn, thỏa ước mơ.</div>
+                <div class="surgicalMethod__maincontent d-lg-flex justify-content-between align-content-between">
+                    <div class="surgicalMethod__maincontent--left d-flex flex-column justify-content-between">
+                        <div>MÙA XÓA CẬN LỚN NHẤT NĂM</div>
+                        <div>DUY NHẤT 99 SUẤT MỖI PHƯƠNG PHÁP PHẪU THUẬT/BỆNH VIỆN</div>
+                        <div><span>ƯU ĐÃI GIẢM LÊN ĐẾN 50%</span></div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="surgicalMethod__maincontent--right d-flex flex-column justify-content-between">
+                        <div>Từ</div>
+                        <div><span>01/07 - 30/07/2021</span></div>
+                    </div>
+                </div>
+                <div class="surgicalMethod__grid">
+                    <div class="surgicalMethod__grid--item">
+                        <div id="best-method"><img src="./assets/images/icon/medal.png" alt=""></div>
+                        <img class="img-fluid" src="./assets/images/Rectangle-9240.png" alt="">
+                        <div class="surgicalMethod__grid--item--bg"></div>
+                        <div class="blur-dot"></div>
+                        <div class="surgicalMethod__grid--item--content mx-auto d-flex flex-column align-items-center">
+                            <div class="contentText-main">RELEX SMILE</div>
+                            <div class="contentText-sub">Phương pháp hiện đại nhất, không tạo vạt, vết mổ dưới 4mm, chiếu tia laser chỉ 23s.</div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">HCM, Cần Thơ, Nha Trang</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>31%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">48,420,000 vnd</div>
+                                    <div class="contentPrice__price--cost">70,000,000 vnd</div>
+                                </div>
+                            </div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">Hà Nội, Vinh</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>39%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">42,525,000 vnd</div>
+                                    <div class="contentPrice__price--cost">70,000,000 vnd</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="surgicalMethod__grid--item">
+                        <img class="img-fluid" src="./assets/images/Rectangle-9240.png" alt="">
+                        <div class="surgicalMethod__grid--item--bg"></div>
+                        <div class="blur-dot"></div>
+                        <div class="surgicalMethod__grid--item--content mx-auto d-flex flex-column align-items-center">
+                            <div class="contentText-main">FEMTOSECOND LASIK</div>
+                            <div class="contentText-sub">Tạo vạt giác mạc an toàn bằng tia femtosecond laser chính xác đến từng micromet, chiếu tia laser điều chỉnh tật khúc xạ.</div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">HCM, Cần Thơ, Nha Trang</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>29%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">28,960,000 vnd</div>
+                                    <div class="contentPrice__price--cost">41,000,000 vnd</div>
+                                </div>
+                            </div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">Hà Nội, Vinh</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>28%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">29,460,000 vnd</div>
+                                    <div class="contentPrice__price--cost">41,000,000 vnd</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="surgicalMethod__grid--item">
+                        <img class="img-fluid" src="./assets/images/Rectangle-9240.png" alt="">
+                        <div class="surgicalMethod__grid--item--bg"></div>
+                        <div class="blur-dot"></div>
+                        <div class="surgicalMethod__grid--item--content mx-auto d-flex flex-column align-items-center">
+                            <div class="contentText-main">STANDARD LASIK</div>
+                            <div class="contentText-sub">Tạo vạt giác mạc bằng dao vi phẫu, chiếu tia laser điều chỉnh tật khúc xạ.</div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">Toàn quốc</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>49%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">10,710,000 vnd</div>
+                                    <div class="contentPrice__price--cost">21,000,000 vnd</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="surgicalMethod__grid--item">
+                        <img class="img-fluid" src="./assets/images/Rectangle-9240.png" alt="">
+                        <div class="surgicalMethod__grid--item--bg"></div>
+                        <div class="blur-dot"></div>
+                        <div class="surgicalMethod__grid--item--content mx-auto d-flex flex-column align-items-center">
+                            <div class="contentText-main">SBK/0UP</div>
+                            <div class="contentText-sub">Tạo vạt giác mạc bằng dao tiến tiến Moria SBK, chiếu tia laser điều chỉnh tật khúc xạ.</div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">Toàn quốc</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>43%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">13,710,000 vnd</div>
+                                    <div class="contentPrice__price--cost">24,000,000 vnd</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="surgicalMethod__grid--item">
+                        <img class="img-fluid" src="./assets/images/Rectangle-9240.png" alt="">
+                        <div class="surgicalMethod__grid--item--bg"></div>
+                        <div class="blur-dot"></div>
+                        <div class="surgicalMethod__grid--item--content mx-auto d-flex flex-column align-items-center">
+                            <div class="contentText-main">SMART SURFACE</div>
+                            <div class="contentText-sub">Phương pháp laser bề mặt không chạm trên máy Schwind Amaris 1050RS, không tạo vạt, phù hợp giác mạc mỏng.</div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">HCM, Cần Thơ, Nha Trang</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>32%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">21,710,000 vnd</div>
+                                    <div class="contentPrice__price--cost">32,000,000 vnd</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="surgicalMethod__grid--item">
+                        <img class="img-fluid" src="./assets/images/Rectangle-9240.png" alt="">
+                        <div class="surgicalMethod__grid--item--bg"></div>
+                        <div class="blur-dot"></div>
+                        <div class="surgicalMethod__grid--item--content mx-auto d-flex flex-column align-items-center">
+                            <div class="contentText-main">STREAM LIGHT</div>
+                            <div class="contentText-sub">Laser bề mặt không chạm trên máy Wavelight EX500, không tạo vạt, phù hợp giác mạc mỏng.</div>
+                            <div class="contentPrice d-flex justify-content-center align-items-center">
+                                <div class="contentPrice__locate">Hà Nội, Vinh</div>
+                                <div class="contentPrice__discount">
+                                    <img src="./assets/images/icon/saleoff.png" alt="">
+                                    <span>28%</span>
+                                </div>
+                                <div class="contentPrice__price d-flex flex-column align-content-end">
+                                    <div class="contentPrice__price--sale">21,710,000 vnd</div>
+                                    <div class="contentPrice__price--cost">30,000,000 vnd</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review">
+            <div class="main-content">TRẢI NGHIỆM VÀ ĐÁNH GIÁ</div>
+            <div class="container">
+                <div class="mt-5 d-lg-flex justify-content-center align-items-center">
+                    <div class="review__img col-lg-7 col-12 clearfix">
+                        <div class="review__img--main"></div>
+                        <div class="review__img--rotate"></div>
+                    </div>
+                    <div class="review__text col-lg-5">
+                        <div class="quote">“</div>
+                        <div class="review__text--reviewer sub-content">
+                            Ca sĩ Nguyên Hà
+                        </div>
+                        <div class="review__text--content sub-content">Xuất phát là sinh viên kiến trúc, cặp kiếng cận đã gắn bó suốt thời sinh viên của Hà. Từ khi chọn con đường ca hát, cặp kính mang đến nhiều bất tiện cho Hà mỗi lần make up hay lúc đứng dưới ánh đèn sân khấu. Qua sự giới thiệu của
+                            đồng nghiệp đã từng mổ cận, Hà đã tin tưởng và lựa chọn Bệnh viện Mắt Sài Gòn để phẫu thuật xóa cận với phương pháp SMILE. Chỉ sau 3 ngày nghỉ ngơi sau mổ, thị lực của Hà đã phục hồi rất tốt ở mức 10/10 rồi. Cảm ơn Mắt Sài
+                            Gòn đã giúp Hà lấy lại thị lực hoàn hảo nhất.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <div class="main-content">VÌ SAO CHỌN MẮT SÀI GÒN?</div>
+                <div class="main-content2">Hệ thống Bệnh viện chuyên khoa Mắt lớn nhất Việt Nam</div>
+                <div class="mt-4 d-flex flex-lg-row flex-column align-items-center gap-2">
+                    <div class="col-lg-6">
+                        <div class="features__item mb-3">
+                            <div class="features__item--icon">
+                                <span></span>
+                                <img src="./assets/images/icon/doc-icon.png" alt="">
+                            </div>
+                            <div class="features__item--text sub-content">
+                                Đội ngũ chuyên gia nhãn khoa giàu kinh nghiệm, đã phẫu thuật khúc xạ trên 200.000 ca
+                            </div>
+                        </div>
+                        <div class="features__item mb-3">
+                            <div class="features__item--icon">
+                                <span></span>
+                                <img src="./assets/images/icon/med-icon.png" alt="">
+                            </div>
+                            <div class="features__item--text sub-content">
+                                Thiết bị chẩn đoán, phẫu thuật hiện đại, tiên tiến nhất
+                            </div>
+                        </div>
+                        <div class="features__item mb-3">
+                            <div class="features__item--icon">
+                                <span></span>
+                                <img src="./assets/images/icon/free-icon.png" alt="">
+                            </div>
+                            <div class="features__item--text sub-content">
+                                Miễn toàn bộ phí tái khám theo lịch trong 1 năm
+                            </div>
+                        </div>
+                        <div class="features__item mb-3">
+                            <div class="features__item--icon">
+                                <span></span>
+                                <img src="./assets/images/icon/100-icon.png" alt="">
+                            </div>
+                            <div class="features__item--text sub-content">
+                                Miễn 100% phí chiếu laser bổ sung(*) nếu tái cận do cơ địa hoặc do sinh hoạt (trong 12 tháng)
+                            </div>
+                        </div>
+                        <div class="features__item mb-3">
+                            <div class="features__item--icon">
+                                <span></span>
+                                <img src="./assets/images/icon/medal-icon.png" alt="">
+                            </div>
+                            <div class="features__item--text sub-content">
+                                Tự hào 17 năm phát triển với 8 bệnh viện tại Hà Nội - Vinh - Nha Trang - HCM - Cần Thơ
+                            </div>
+                        </div>
+                        <div class="features__note">(*)Theo chỉ định của bác sĩ</div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="./assets/images/Group-81.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="humanResource">
+            <div class="container">
+                <div class="main-content">Đội ngũ Bác sĩ đầu ngành</div>
+                <div class="main-content2">Bác sĩ Giám đốc/ Giám đốc chuyên môn/ Trưởng khoa phẫu thuật khúc xạ được đào tạo bài bản tại Việt Nam và nước ngoài, nhiều năm kinh nghiệm, phẫu thuật trên 200.000 ca.</div>
+                <div class="slider">
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Ket.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">BS CKII Trần Văn Kết</div>
+                            <div class="sub-content text-center">Mắt Sài Gòn Cần Thơ</div>
+                            <div class="sub-content-18 text-black">30 năm kinh nghiệm, chuyên gia nhãn khoa hàng đầu ĐBSCL</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Huong.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">Ths BS Bùi Cẩm Hương</div>
+                            <div class="sub-content text-center">Mắt Sài Gòn Đường Láng</div>
+                            <div class="sub-content-18 text-black">11 năm kinh nghiệm, phẫu thuật trên 20.000 ca</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Minh.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">BS CKII Trương Công Minh</div>
+                            <div class="sub-content text-center">Mắt Sài Gòn Lê Thị Riêng</div>
+                            <div class="sub-content-18 text-black">25 năm kinh nghiệm, phẫu thuật trên 50.000 ca</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Tuong.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">BS CKII Trần Thị Hồng Tường</div>
+                            <div class="sub-content text-center">Đa khoa Mắt Sài Gòn</div>
+                            <div class="sub-content-18 text-black">18 năm kinh nghiệm, phẫu thuật trên 30.000 ca</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Cong.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">BS CKII Lê Duy Công</div>
+                            <div class="sub-content text-center"><br></div>
+                            <div class="sub-content-18 text-black">9 năm kinh nghiệm, phẫu thuật trên 20.000 ca</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Cuong.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">Ths.BS CKI Lê Ng. Huy Cường</div>
+                            <div class="sub-content text-center">Mắt Sài Gòn Ngô Gia Tự</div>
+                            <div class="sub-content-18 text-black">17 năm kinh nghiệm, phẫu thuật trên 20.000 ca</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Lan.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">Ths. BS Ngô Lan</div>
+                            <div class="sub-content text-center">Mắt Sài Gòn Nguyễn Du</div>
+                            <div class="sub-content-18 text-black">11 năm kinh nghiệm, Thạc sĩ nhãn khoa loại giỏi</div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item--img">
+                            <span class="slider-mainbg"><span></span></span>
+                            <img class="img-fluid" src="./assets/images/BS-Trung.png" alt="">
+                        </div>
+                        <div class="slider__item--text">
+                            <div class="sub-content doc-name text-center">BS CKII Nguyễn Nam Trung</div>
+                            <div class="sub-content text-center"><br></div>
+                            <div class="sub-content-18 text-black">18 năm kinh nghiệm, phụ trách chuyên môn tại nhiều BV trên cả nước</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="equipment">
+            <div class="container">
+                <div class="main-content text-center">MÁY MÓC VÀ THIẾT BỊ</div>
+                <div class="equipmentGrid">
+                    <div class="equipmentGrid__item">
+                        <div class="equipmentGrid__item--img"><img src="./assets/images/equip1.png" alt=""></div>
+                        <div class="equipmentGrid__item--text">
+                            <div class="sub-content equip-name">VISUMAX</div>
+                            <div class="sub-content equip-origin">Carl Zeiss - Đức</div>
+                            <div class="sub-content-18 equip-info text-black">Độc quyền công nghệ ReLEx SMILE. Phiên bản cập nhật 2021, hiện đại nhất thế giới.</div>
+                        </div>
+                    </div>
+                    <div class="equipmentGrid__item">
+                        <div class="equipmentGrid__item--img"><img src="./assets/images/equip2.png" alt=""></div>
+                        <div class="equipmentGrid__item--text">
+                            <div class="sub-content equip-name">WAVELIGHT EX500</div>
+                            <div class="sub-content equip-origin">Alcon - Thụy Sĩ</div>
+                            <div class="sub-content-18 equip-info text-black">Công nghệ laser không chạm Streamlight, tính năng theo dõi mắt 6-sigma, hệ thống đo độ dày giác mạc trực tiếp.</div>
+                        </div>
+                    </div>
+                    <div class="equipmentGrid__item">
+                        <div class="equipmentGrid__item--img"><img src="./assets/images/equip3.png" alt=""></div>
+                        <div class="equipmentGrid__item--text">
+                            <div class="sub-content equip-name">SCHWIND AMARIS 1050RS</div>
+                            <div class="sub-content equip-origin">Schwind - Đức</div>
+                            <div class="sub-content-18 equip-info text-black">Công nghệ laser không chạm Smart-surfACE, điều trị chỉ 1,3 giây cho mỗi độ cận, hệ thống theo dõi mắt không độ trễ.</div>
+                        </div>
+                    </div>
+                    <div class="equipmentGrid__item">
+                        <div class="equipmentGrid__item--img"><img src="./assets/images/equip4.png" alt=""></div>
+                        <div class="equipmentGrid__item--text">
+                            <div class="sub-content equip-name">PENTACAM HR</div>
+                            <div class="sub-content equip-origin">Oculus - Đức</div>
+                            <div class="sub-content-18 equip-info text-black">Máy khảo sát bản đồ giác mạc hiện đại nhất. Phát hiện, loại trừ tối đa các nguy cơ trong và sau phẫu thuật.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question">
+            <div class="container">
+                <div class="main-content text-uppercase text-center">Thắc mắc thường gặp khi<br> phẫu thuật khúc xạ bằng laser</div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. Vừa cận vừa loạn thì nên mổ phương pháp nào?
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Để biết mình phù hợp với phương pháp nào, mình cần khám chuyên sâu trước phẫu thuật khúc xạ. Với các chỉ số liên quan đến số độ cận – loạn cũng như độ dày giác mạc cùng các yếu tố khác, bác sĩ sẽ tư vấn cho mình phương pháp phù hợp với mắt bạn nhất.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. Cháu nên bỏ kính áp tròng bao lâu trước khi mổ?
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Trước khi đi mổ nếu bệnh nhân có đeo kính áp tròng thì nên bỏ kính áp tròng ra trước đó 2 tuần đối với kính áp tròng mềm, kính áp tròng cứng thì tháo trước đó 4 tuần.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3. Mổ xong có phải nằm viện lại không?
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sau phẫu thuật bạn có thể ra về ngay trong ngày, không cần nằm lại viện. Sau 4-6 tiếng nghỉ ngơi, bạn đã có thể trở lại các hoạt động mắt một cách nhẹ nhàng như mở mắt bình thường khi nói chuyện, đọc sách, thư giãn mắt 5 phút sau khoảng 30 phút… Tùy thuộc
+                                vào từng phương pháp mổ, bác sĩ sẽ tư vấn kỹ từng lưu ý trong sinh hoạt cho bạn. Và bạn sẽ tái khám lại sau 1 ngày – 3 ngày – 1 tuần – 1 tháng – 6 tháng và 1 năm.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4. Làm sao biết mắt mình hợp với PP mổ nào?
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Để biết mình phù hợp với phương pháp nào, bạn cần trải qua bước khám chuyên sâu trước phẫu thuật khúc xạ. Sau đó, bác sĩ sẽ dựa trên kết quả khám để đưa ra những lời khuyên và tư vấn chính xác nhất.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                5. Cận nặng tới 8.5 độ có mổ được không?
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Phương pháp điều trị khúc xạ bằng laser như Femtosecond LASIK, LASIK, LASER bề mặt có thể điều trị độ cận đến -12.0 độ kèm hoặc không kèm theo độ loạn đến 6 độ, độ viễn đến +6.0 độ. Phương pháp ReLEx SMILE không tạo vạt có thể điều trị độ cận đến -10.0
+                                độ và độ loạn đến -5.0 độ. Do đó, số độ cận 8.5 của bạn hoàn toàn có thể phẫu thuật được.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="d-lg-flex align-items-center">
+                    <div class="col-lg-6 order-lg-2"> <img class="img-fluid" src="./assets/images/Group-75.png" alt=""></div>
+                    <div class="contact__form col-lg-6 order-lg-1 mt-lg-0 mt-4">
+                        <div class="contact__form--title">Nhập thông tin của bạn để chúng tôi liên lạc với bạn sớm nhất.</div>
+                        <form>
+                            <div class="input-group">
+                                <img src="./assets/images/icon/family-icon.svg" alt="">
+                                <input type="text" class="form-control" id="inputName" aria-describedby="name" placeholder="Nhập tên của bạn" required>
+                            </div>
+                            <div class="input-group">
+                                <img src="./assets/images/icon/mail-icon.svg" alt="">
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="message" placeholder="Nhập email của bạn" required>
+                            </div>
+                            <div class="input-group">
+                                <img src="./assets/images/icon/phone-icon.svg" alt="">
+                                <input type="tel" class="form-control" id="inputTel" aria-describedby="tel" placeholder="Nhập số điện thoại của bạn" required>
+                            </div>
+                            <div class="input-group">
+                                <img src="./assets/images/icon/hotel-icon.svg" alt="">
+                                <select class="form-select form-select-lg" id="type-question-select2" aria-label=".form-select-lg example">
+                                    <option class="disable-opt" value="" selected disabled hidden>Bạn muốn khám và phẫu thuật tại</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                  </select>
+
+                            </div>
+                            <div class="d-flex justify-content-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="d-md-flex align-items-center">
+                    <div class="col-lg-4 order-lg-last mb-lg-0 mb-5">
+                        <img class="img-fluid" src="./assets/images/header-logo.png" alt="">
+                    </div>
+                    <div class="col-lg-8 order-lg-first">
+                        <div class="footer__locate">
+                            <div class="footer__locate--branch">
+                                <div class="col-xl-2 col-sm-3">TP.HCM</div>
+                                <div class="col-xl-10 col-sm-9">
+                                    473 CMTT, P. 13, Q. 10<br> 355 – 356, Ngô Gia Tự, P. 3, Q. 10<br> 100 Lê Thị Riêng, P. Bến Thành, Q. 1<br>
+                                </div>
+                            </div>
+                            <div class="footer__locate--branch">
+                                <div class="col-xl-2 col-sm-3">Hà Nội</div>
+                                <div class="col-xl-10 col-sm-9">
+                                    532 đường Láng Hạ, P. Láng Hạ, Q. Đống Đa<br> 77 Nguyễn Du, Q. Hai Bà Trưng
+                                </div>
+                            </div>
+                            <div class="footer__locate--branch">
+                                <div class="col-xl-2 col-sm-3">Vinh</div>
+                                <div class="col-xl-10 col-sm-9">
+                                    999 Đại lộ VI Lê Nin, Hà Huy Tập
+                                </div>
+                            </div>
+                            <div class="footer__locate--branch">
+                                <div class="col-xl-2 col-sm-3">Nha Trang</div>
+                                <div class="col-xl-10 col-sm-9">
+                                    9-24 khu dân cư Cầu Dứa, Vĩnh Hiệp
+                                </div>
+                            </div>
+                            <div class="footer__locate--branch">
+                                <div class="col-xl-2 col-sm-3">Cần Thơ</div>
+                                <div class="col-xl-10 col-sm-9">
+                                    717 đường 3/2, P. An Bình, Q. Ninh Kiều<br> 77 QL 91, KV Phụng Thạnh, P.Thốt Nốt, Q.Thốt Nốt
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__tel"><a href="">1900 555 553</a></div>
+                        <div class="footer__mail"><a href="">info@matsaigon.com</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
