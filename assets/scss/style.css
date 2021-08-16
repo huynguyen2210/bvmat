@@ -1,0 +1,1288 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/poppins-regular.eot");
+  src: url("../fonts/poppins-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-regular.woff2") format("woff2"), url("../fonts/poppins-regular.woff") format("woff"), url("../fonts/poppins-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/poppins-semibold.eot");
+  src: url("../fonts/poppins-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-semibold.woff2") format("woff2"), url("../fonts/poppins-semibold.woff") format("woff"), url("../fonts/poppins-semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SansPro';
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+.btn-header {
+  padding: 12px 10px;
+  font-family: 'Montserrat Bold';
+  font-weight: 700;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #008E47;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #008E47;
+  background-blend-mode: overlay, normal;
+  border-radius: 100px;
+  width: 297px;
+  position: relative;
+}
+
+.btn-header span {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fff), color-stop(0%, #fff), to(#FFF389));
+  background-image: linear-gradient(to bottom, #fff 100%, #fff 0%, #FFF389);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+
+.btn-header::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background: #FDCE25;
+  -webkit-box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
+  border-radius: 43.24px;
+  z-index: -1;
+}
+
+.btn-style {
+  padding: 12px 10px;
+  font-family: 'Montserrat Bold';
+  font-weight: 700;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#faca48), color-stop(50%, #f5a53d), to(#fad76e));
+  background: linear-gradient(180deg, #faca48 0%, #f5a53d 50%, #fad76e 100%);
+  -webkit-box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
+  border-radius: 37px;
+  width: 195px;
+}
+
+.btn-style span {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fff), color-stop(0%, #fff), to(#FFF389));
+  background-image: linear-gradient(to bottom, #fff 100%, #fff 0%, #FFF389);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+
+.btn-style:hover, .btn-style:active, .btn-style:focus {
+  border-color: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-content {
+  font-family: "Montserrat Bold";
+  font-weight: 800;
+  color: #0C9155;
+  line-height: 1.2;
+  font-size: 34px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .main-content {
+    font-size: 28px;
+  }
+}
+
+.main-content2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0.8rem 0;
+}
+
+.sub-content {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 22px;
+  color: #fff;
+  text-align: left;
+}
+
+.sub-content-18 {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.quote {
+  font-family: 'SansPro';
+  font-weight: 400;
+  font-size: 72px;
+  color: #fff;
+  line-height: 0.6;
+}
+
+form input {
+  margin-bottom: 12px;
+  border-radius: 10px !important;
+}
+
+form input::-webkit-input-placeholder {
+  color: #ced4da;
+}
+
+form input:-ms-input-placeholder {
+  color: #ced4da;
+}
+
+form input::-ms-input-placeholder {
+  color: #ced4da;
+}
+
+form input::placeholder {
+  color: #ced4da;
+}
+
+form input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-color: #CBCBCBEB !important;
+  outline-color: #CBCBCBEB !important;
+}
+
+form .form-select {
+  background-image: url(../images/icon/down.png);
+  border-radius: 10px;
+  border-color: #E26630;
+}
+
+form .form-select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #E26630 !important;
+  outline-color: #E26630 !important;
+}
+
+form button {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1470px;
+  }
+}
+
+.navbar {
+  background: transparent;
+}
+
+@media screen and (min-width: 1920px) {
+  .navbar {
+    padding: 42px 0;
+  }
+}
+
+.navbar .nav-item .nav-link {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 14px;
+  color: #299562;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar .navbar-collapse {
+    padding: 1rem 0;
+  }
+  .navbar .navbar-collapse .nav-item .nav-link {
+    text-align: left;
+  }
+}
+
+.banner {
+  position: relative;
+}
+
+.banner .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .banner .container {
+    top: 45%;
+  }
+}
+
+.banner__form {
+  max-width: 378px;
+  padding: 40px 20px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.banner__form--title {
+  color: #E66E44;
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1366px) {
+  .banner__form {
+    max-width: 325px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner__form {
+    max-width: 290px;
+    padding: 15px;
+  }
+  .banner__form--title {
+    margin-bottom: 20px;
+  }
+  .banner__form button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner__form {
+    display: none;
+  }
+}
+
+.banner__popup {
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  -webkit-transform: translate(50%, 20%);
+          transform: translate(50%, 20%);
+}
+
+.banner__popup div img {
+  cursor: pointer;
+  max-width: 80px;
+  height: auto;
+}
+
+@media screen and (min-width: 1920px) {
+  .banner__popup div img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner__popup div img {
+    max-width: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner__popup div img {
+    max-width: 35px;
+  }
+}
+
+.banner .btn-modal-form {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .banner .btn-modal-form {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(-10%, -50%);
+            transform: translate(-10%, -50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner .btn-modal-form {
+    width: 120px;
+    padding: 5px;
+  }
+  .banner .btn-modal-form span {
+    font-size: 16px;
+  }
+}
+
+.surgicalMethod {
+  padding: 1.8rem 0;
+}
+
+.surgicalMethod__subcontent {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .surgicalMethod__subcontent {
+    font-size: 18px;
+  }
+}
+
+.surgicalMethod__maincontent {
+  margin: 5rem 0 4rem;
+}
+
+.surgicalMethod__maincontent--left div:nth-of-type(1) {
+  font-family: "Montserrat Bold";
+  font-weight: 800;
+  color: #008E47;
+  line-height: 1.2;
+  font-size: 48px;
+  text-align: justify;
+}
+
+.surgicalMethod__maincontent--left div:nth-of-type(2) {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 24px;
+  color: #008E47;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.surgicalMethod__maincontent--left div:nth-of-type(3) span {
+  font-family: "Montserrat Bold";
+  font-weight: 800;
+  line-height: 1.2;
+  background-image: -webkit-gradient(linear, left top, right top, from(#D3884B), color-stop(#D28548), color-stop(#FCCE93), color-stop(#D28548), color-stop(#F8CF9D), color-stop(#E1A063), to(#D28548));
+  background-image: linear-gradient(to right, #D3884B, #D28548, #FCCE93, #D28548, #F8CF9D, #E1A063, #D28548);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #D7AC4A;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  font-size: 56px;
+  letter-spacing: -0.01em;
+}
+
+.surgicalMethod__maincontent--left div:nth-of-type(1) {
+  font-family: "Montserrat Bold";
+  font-weight: 800;
+  color: #008E47;
+  line-height: 1.2;
+  font-size: 41px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1920px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(1) {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(1) {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(1) {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(1) {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.surgicalMethod__maincontent--left div:nth-of-type(2) {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 20px;
+  color: #008E47;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 1920px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(2) {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(2) {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(2) {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(2) {
+    text-align: center;
+  }
+}
+
+.surgicalMethod__maincontent--left div:nth-of-type(3) span {
+  font-family: "Montserrat Bold";
+  font-weight: 800;
+  line-height: 1.2;
+  background-image: -webkit-gradient(linear, left top, right top, from(#D3884B), color-stop(#D28548), color-stop(#FCCE93), color-stop(#D28548), color-stop(#F8CF9D), color-stop(#E1A063), to(#D28548));
+  background-image: linear-gradient(to right, #D3884B, #D28548, #FCCE93, #D28548, #F8CF9D, #E1A063, #D28548);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #D7AC4A;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  font-size: 47px;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (min-width: 1920px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(3) span {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(3) span {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .surgicalMethod__maincontent--left div:nth-of-type(3) span {
+    font-size: 26px;
+  }
+}
+
+.surgicalMethod__maincontent--right div:nth-of-type(1) {
+  font-family: "Montserrat Bold";
+  font-weight: 800;
+  color: #008E47;
+  line-height: 1.2;
+  font-size: 60px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 1920px) {
+  .surgicalMethod__maincontent--right div:nth-of-type(1) {
+    font-size: 68px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .surgicalMethod__maincontent--right div:nth-of-type(1) {
+    font-size: 54px;
+  }
+}
+
+.surgicalMethod__maincontent--right div:nth-of-type(2) span {
+  font-family: "Montserrat Bold";
+  font-weight: 800;
+  line-height: 1.2;
+  background-image: -webkit-gradient(linear, left top, right top, from(#D3884B), color-stop(#D28548), color-stop(#FCCE93), color-stop(#D28548), color-stop(#F8CF9D), color-stop(#E1A063), to(#D28548));
+  background-image: linear-gradient(to right, #D3884B, #D28548, #FCCE93, #D28548, #F8CF9D, #E1A063, #D28548);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #D7AC4A;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  font-size: 47px;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (min-width: 1920px) {
+  .surgicalMethod__maincontent--right div:nth-of-type(2) span {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .surgicalMethod__maincontent--right div:nth-of-type(2) span {
+    font-size: 38px;
+  }
+}
+
+.surgicalMethod__maincontent .vertical-line {
+  content: '';
+  display: block;
+  width: 2px;
+  height: auto;
+  background: #000;
+}
+
+@media screen and (max-width: 1023px) {
+  .surgicalMethod__maincontent .vertical-line {
+    display: none;
+  }
+}
+
+.surgicalMethod__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 30px 30px;
+}
+
+@media screen and (max-width: 1366px) {
+  .surgicalMethod__grid {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .surgicalMethod__grid {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    gap: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .surgicalMethod__grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.surgicalMethod__grid--item {
+  background: url(../images/Rectangle-9241.png) left no-repeat;
+  width: 100%;
+  height: auto;
+  background-size: auto;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 52px;
+  padding: 2rem 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.surgicalMethod__grid--item #best-method {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  .surgicalMethod__grid--item #best-method img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .surgicalMethod__grid--item #best-method img {
+    width: 60%;
+  }
+}
+
+.surgicalMethod__grid--item--bg {
+  content: '';
+  display: block;
+  position: absolute;
+  background: radial-gradient(91.8% 91.8% at 50% 50%, #1AAE6A 0%, #6FCF97 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.surgicalMethod__grid--item > img {
+  position: absolute;
+  z-index: -1;
+  right: -2rem;
+  bottom: -2rem;
+}
+
+.surgicalMethod__grid--item .blur-dot {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 64.29px;
+  height: 62px;
+  right: 20px;
+  top: 8px;
+  background: #9DF3C1;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
+.surgicalMethod__grid--item--content .contentText-main {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.surgicalMethod__grid--item--content .contentText-sub {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #008E47;
+  text-align: center;
+  background: #fff;
+  border: 3px solid #478360;
+  border-radius: 29px;
+  height: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.surgicalMethod__grid--item--content .contentPrice {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.surgicalMethod__grid--item--content .contentPrice__locate {
+  width: 32%;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+}
+
+.surgicalMethod__grid--item--content .contentPrice__discount {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.surgicalMethod__grid--item--content .contentPrice__discount span {
+  position: absolute;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.surgicalMethod__grid--item--content .contentPrice__price {
+  text-align: right;
+}
+
+.surgicalMethod__grid--item--content .contentPrice__price--sale {
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.surgicalMethod__grid--item--content .contentPrice__price--cost {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.review {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.43%, #008E47), color-stop(49.18%, #20BD74), to(#0B9054));
+  background: linear-gradient(90deg, #008E47 1.43%, #20BD74 49.18%, #0B9054 100%);
+  padding: 1rem 0 4rem;
+}
+
+.review .main-content {
+  background: #FFF6A6;
+  padding: 1.5rem 0;
+}
+
+.review__img {
+  position: relative;
+}
+
+.review__img--main {
+  position: relative;
+  background: url(../images/review.png) left no-repeat;
+  width: 400px;
+  height: 400px;
+  background-size: contain;
+  z-index: 2;
+  float: left;
+}
+
+.review__img--rotate {
+  position: absolute;
+  background: url(../images/review.png) right no-repeat;
+  width: 400px;
+  height: 400px;
+  background-size: contain;
+  right: 0;
+  top: 2rem;
+  -webkit-transform: rotate(13.34deg);
+          transform: rotate(13.34deg);
+  z-index: 1;
+}
+
+.review__text--reviewer {
+  font-size: 34px;
+  margin-bottom: 1rem;
+}
+
+.review__text--content {
+  text-align: justify;
+}
+
+.features {
+  padding: 6rem 0;
+}
+
+.features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__item--icon {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.features__item--icon span {
+  content: '';
+  display: block;
+  background: #008E47;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.features__item--icon img {
+  position: absolute;
+  width: 38px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.features__item--text {
+  color: #454545;
+}
+
+.features__note {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  color: #454545;
+}
+
+.humanResource {
+  background: #F0FFF6;
+  padding: 6rem 0;
+}
+
+.humanResource .main-content2 {
+  font-size: 20px;
+  padding: 0 6rem;
+}
+
+@media screen and (max-width: 992px) {
+  .humanResource .main-content2 {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .humanResource .main-content2 {
+    padding: 0 1rem;
+  }
+}
+
+.humanResource .slider {
+  margin: 0 -10px;
+}
+
+.humanResource .slider__item {
+  margin: 0 10px;
+}
+
+.humanResource .slider__item--img {
+  position: relative;
+}
+
+.humanResource .slider__item--img span {
+  background: #DFF5EB;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 15px 15px 0 0;
+  z-index: -2;
+}
+
+.humanResource .slider__item--img span span {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background: #219653;
+  -webkit-filter: blur(55px);
+          filter: blur(55px);
+}
+
+.humanResource .slider__item--text {
+  padding: 12px 1.5rem 1rem;
+  background: #F6F7F9;
+  border: 1px solid #DFF5EB;
+  border-radius: 0 0 25px 25px;
+}
+
+.humanResource .slider__item--text div {
+  color: #008E47;
+}
+
+.humanResource .slider__item--text .doc-name {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .humanResource .slider__item--text .sub-content {
+    font-size: 18px;
+  }
+}
+
+.equipment {
+  padding: 5rem 0;
+}
+
+.equipment .equipmentGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
+}
+
+@media screen and (min-width: 1920px) {
+  .equipment .equipmentGrid {
+    -webkit-column-gap: 100px;
+            column-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .equipment .equipmentGrid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 60px 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .equipment .equipmentGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.equipment .equipmentGrid__item--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid #000000;
+}
+
+.equipment .equipmentGrid__item--text .equip-name {
+  color: #008E47;
+  font-size: 26px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  height: 4rem;
+}
+
+.equipment .equipmentGrid__item--text .equip-origin {
+  color: #008E47;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.equipment .equipmentGrid__item--text .equip-info {
+  text-align: justify;
+}
+
+.question {
+  background: #F0FFF6;
+  padding: 3rem 0 5rem;
+}
+
+.question .main-content {
+  background: #008E47;
+  color: #fff;
+  padding: 1.5rem 0;
+  border-radius: 12px;
+}
+
+.question .accordion {
+  max-width: 80%;
+  margin: 1rem auto 0;
+}
+
+.question .accordion .accordion-item {
+  background: none;
+  border: none;
+  border-top: 0.5px solid #454545;
+}
+
+.question .accordion .accordion-item:first-of-type {
+  border-top: none;
+}
+
+.question .accordion .accordion-item .accordion-button {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 24px;
+  color: #000;
+  text-align: left;
+  border: none;
+  background: none;
+  padding: 2rem 0;
+}
+
+.question .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.question .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/icon/down-arrow.png);
+}
+
+.question .accordion .accordion-item .accordion-button::after {
+  background-image: url(../images/icon/down-arrow.png);
+}
+
+.question .accordion .accordion-item .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.question .accordion .accordion-item .accordion-body {
+  padding: 1rem 0 4rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 22px;
+  color: #000;
+  text-align: justify;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 22px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 20px rgba(128, 128, 128, 0.25);
+          box-shadow: 0px 4px 20px rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.input-group img {
+  width: 20px;
+  height: auto;
+}
+
+.input-group input {
+  border: none;
+  margin-bottom: 0;
+  margin-left: 0 !important;
+}
+
+.input-group input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.input-group input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-size: 13px;
+}
+
+.input-group input:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-size: 13px;
+}
+
+.input-group input::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-size: 13px;
+}
+
+.input-group input::placeholder {
+  color: #BDBDBD;
+  font-size: 13px;
+}
+
+.input-group select {
+  color: #BDBDBD;
+  font-size: 13px;
+  border: none;
+  background-image: none;
+}
+
+.input-group select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact {
+  background: url(../images/mask-group.png) center no-repeat;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+.contact__form--title {
+  width: 80%;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__form--title {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact__form--title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact__form--title {
+    width: 100%;
+  }
+}
+
+.contact__form form {
+  width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__form form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact__form form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact__form form {
+    width: 100%;
+  }
+}
+
+footer {
+  padding: 4rem 0;
+  color: #717171;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+footer .footer__locate, footer .footer__tel, footer .footer__mail {
+  position: relative;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  footer .footer__locate, footer .footer__tel, footer .footer__mail {
+    margin-left: 3rem;
+  }
+}
+
+footer .footer__locate::before, footer .footer__tel::before, footer .footer__mail::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 27px;
+  height: 35px;
+  top: 0;
+  left: -4rem;
+}
+
+@media screen and (max-width: 992px) {
+  footer .footer__locate::before, footer .footer__tel::before, footer .footer__mail::before {
+    left: -2.5rem;
+  }
+}
+
+footer .footer__locate--branch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 576px) {
+  footer .footer__locate--branch {
+    display: block;
+  }
+  footer .footer__locate--branch div:first-child {
+    margin-bottom: 0.5rem;
+  }
+}
+
+footer .footer__locate--branch:not(:first-of-type) {
+  margin-top: 2rem;
+  position: relative;
+}
+
+footer .footer__locate--branch:not(:first-of-type)::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: #717171;
+  width: 80%;
+  height: 0.5px;
+  left: 0;
+  top: -1rem;
+}
+
+footer .footer__locate::before {
+  background: url(../images/icon/location.png) center no-repeat;
+}
+
+footer .footer__tel::before {
+  background: url(../images/icon/phone.png) center no-repeat;
+  width: 35px;
+}
+
+footer .footer__mail::before {
+  background: url(../images/icon/email.png) center no-repeat;
+  width: 35px;
+}
+/*# sourceMappingURL=style.css.map */

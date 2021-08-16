@@ -86,6 +86,63 @@ $align) {
     color: transparent;
 }
 
+@mixin btn-decor {
+    padding: 12px 10px;
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-header {
+    @include btn-decor();
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #008E47;
+    background-blend-mode: overlay, normal;
+    border-radius: 100px;
+    width: 297px;
+    span {
+        background-image: linear-gradient(to bottom, #fff 100%, #fff 0%, #FFF389);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+    }
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        background: #FDCE25;
+        box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
+        border-radius: 43.24px;
+        z-index: -1;
+    }
+}
+
+.btn-style {
+    @include btn-decor();
+    background: linear-gradient(180deg, rgba(250, 202, 72, 1) 0%, rgba(245, 165, 61, 1) 50%, rgba(250, 215, 110, 1) 100%);
+    box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
+    border-radius: 37px;
+    width: 195px;
+    span {
+        background-image: linear-gradient(to bottom, #fff 100%, #fff 0%, #FFF389);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: none !important;
+        box-shadow: none !important;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -133,6 +190,34 @@ ul {
     line-height: 0.6;
 }
 
+form {
+    input {
+        margin-bottom: 12px;
+        border-radius: 10px !important;
+        &::placeholder {
+            color: #ced4da;
+        }
+        &:focus {
+            box-shadow: none !important;
+            border-color: #CBCBCBEB !important;
+            outline-color: #CBCBCBEB !important;
+        }
+    }
+    .form-select {
+        background-image: url(../images/icon/down.png);
+        border-radius: 10px;
+        border-color: #E26630;
+        &:focus {
+            box-shadow: none;
+            border-color: #E26630 !important;
+            outline-color: #E26630 !important;
+        }
+    }
+    button {
+        margin-top: 1.5rem;
+    }
+}
+
 .container {
     @media screen and (min-width: 1920px) {
         max-width: 1470px;
@@ -144,6 +229,23 @@ ul {
     @media screen and (min-width: 1920px) {
         padding: 42px 0;
     }
+    .nav-item {
+        .nav-link {
+            @include sub-text(#299562,
+            14px,
+            center);
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .navbar-collapse {
+            padding: 1rem 0;
+            .nav-item {
+                .nav-link {
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
 
 .banner {
@@ -153,6 +255,9 @@ ul {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        @media screen and (max-width: 1024px) {
+            top: 45%;
+        }
     }
     &__form {
         max-width: 378px;
@@ -168,39 +273,57 @@ ul {
             text-align: center;
             margin-bottom: 30px;
         }
-        input {
-            margin-bottom: 12px;
-            border-radius: 10px;
-            &::placeholder {
-                color: #ced4da;
-            }
-            &:focus {
-                box-shadow: none;
-            }
-        }
-        .styled-select {
-            margin-bottom: 26px;
-        }
         @media screen and (max-width: 1366px) {
             max-width: 325px;
         }
         @media screen and (max-width: 1024px) {
             max-width: 290px;
+            padding: 15px;
+            &--title {
+                margin-bottom: 20px;
+            }
+            button {
+                margin-top: 10px;
+            }
         }
         @media screen and (max-width: 992px) {
-            max-width: 215px;
+            display: none;
         }
     }
     &__popup {
         position: absolute;
-        right: 1.5rem;
-        bottom: 5rem;
+        right: 5%;
+        bottom: 20%;
+        transform: translate(50%, 20%);
         div img {
             cursor: pointer;
             max-width: 80px;
             height: auto;
             @media screen and (min-width: 1920px) {
                 max-width: 100%;
+            }
+            @media screen and (max-width: 992px) {
+                max-width: 60px;
+            }
+            @media screen and (max-width: 576px) {
+                max-width: 35px;
+            }
+        }
+    }
+    .btn-modal-form {
+        display: none;
+        @media screen and (max-width: 992px) {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translate(-10%, -50%);
+        }
+        @media screen and (max-width: 576px) {
+            width: 120px;
+            padding: 5px;
+            span {
+                font-size: 16px;
             }
         }
     }
@@ -212,6 +335,9 @@ ul {
         @include sub-text(#000,
         22px,
         center);
+        @media screen and (max-width: 576px) {
+            font-size: 18px;
+        }
     }
     &__maincontent {
         margin: 5rem 0 4rem;
@@ -244,6 +370,13 @@ ul {
                 @media screen and (max-width: 1024px) {
                     font-size: 33px;
                 }
+                @media screen and (max-width: 992px) {
+                    text-align: left;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 24px;
+                    text-align: center;
+                }
             }
             & div:nth-of-type(2) {
                 @include sub-text(#008E47,
@@ -256,16 +389,27 @@ ul {
                 @media screen and (max-width: 1024px) {
                     font-size: 16px;
                 }
-            }
-            & div:nth-of-type(3) span {
-                @include gradient-text();
-                font-size: 47px;
-                letter-spacing: -0.01em;
-                @media screen and (min-width: 1920px) {
-                    font-size: 56px;
+                @media screen and (max-width: 992px) {
+                    text-align: left;
                 }
-                @media screen and (max-width: 1024px) {
-                    font-size: 38px;
+                @media screen and (max-width: 576px) {
+                    text-align: center;
+                }
+            }
+            & div:nth-of-type(3) {
+                span {
+                    @include gradient-text();
+                    font-size: 47px;
+                    letter-spacing: -0.01em;
+                    @media screen and (min-width: 1920px) {
+                        font-size: 56px;
+                    }
+                    @media screen and (max-width: 576px) {
+                        font-size: 38px;
+                    }
+                    @media screen and (max-width: 1024px) {
+                        font-size: 26px;
+                    }
                 }
             }
         }
@@ -528,6 +672,12 @@ ul {
     .main-content2 {
         font-size: 20px;
         padding: 0 6rem;
+        @media screen and (max-width: 992px) {
+            padding: 0 2rem;
+        }
+        @media screen and (max-width: 576px) {
+            padding: 0 1rem;
+        }
     }
     .slider {
         margin: 0 -10px;
@@ -685,21 +835,24 @@ ul {
     }
     input {
         border: none;
+        margin-bottom: 0;
+        margin-left: 0 !important;
         &:focus {
             box-shadow: none;
         }
         &::placeholder {
             color: #BDBDBD;
-            font-size: 12px;
+            font-size: 13px;
         }
     }
     select {
         color: #BDBDBD;
-        font-size: 12px;
+        font-size: 13px;
         border: none;
         &:focus {
             box-shadow: none;
         }
+        background-image: none;
     }
 }
 

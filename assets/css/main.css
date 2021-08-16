@@ -1,0 +1,37 @@
+.modal-title {
+    color: #E66E44;
+}
+
+.slick-prev:before {
+    content: '←';
+}
+
+.slick-next:before {
+    content: '→';
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: unset;
+    font-size: 30px;
+    line-height: 1;
+    color: #219653;
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:visited,
+.navbar-toggler:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler .close-icon {
+    display: inline;
+}
+
+.navbar-toggler.collapsed .close-icon,
+.navbar-toggler:not(.collapsed) .toggler-icon {
+    display: none;
+}

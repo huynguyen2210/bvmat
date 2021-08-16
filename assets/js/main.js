@@ -1,20 +1,12 @@
 $(document).ready(function() {
-    $('.select2-box').select2({
-        minimumResultsForSearch: -1,
-        templateResult: function(option) {
-            if (option.element && (option.element).hasAttribute('hidden')) {
-                return null;
-            }
-            return option.text;
-        }
+    $(".nav-link").click(function() {
+        $(".close-icon").trigger("click");
     });
 
     $('.slider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        // prevArrow: $('.btn-prev'),
-        // nextArrow: $('.btn-next'),
         responsive: [{
                 breakpoint: 1440,
                 settings: {

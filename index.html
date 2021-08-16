@@ -12,43 +12,76 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-xl">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./assets/images/menu-logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/images/menu-logo.png" alt=""></a>
+
+                <a href="" class="navbar-toggler collapsed" type="" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="close-icon"><img src="./assets/images/icon/close-24.png" alt=""></span>
+                    <span class="toggler-icon"><img src="./assets/images/icon/menu-24.png" alt=""></span>
+                </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#surgical-method">PHƯƠNG PHÁP PHẪU THUẬT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#hr-doctor">ĐỘI NGŨ BÁC SĨ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#special-features">TẠI SAO NÊN PHẪU THUẬT KHÚC XẠ BẰNG LASER</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#review-rate">TRẢI NGHIỆM VÀ ĐÁNH GIÁ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#Q&A">GIẢI ĐÁP THẮC MẮC</a>
                         </li>
                     </ul>
-
+                    <button class="btn btn-header">
+                        <span>ĐĂNG KÍ LỊCH KHÁM</span>
+                    </button>
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Đăng ký lịch khám</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <input type="text" class="form-control" id="inputName" aria-describedby="name" placeholder="Họ và Tên" required>
+                            <input type="text" class="form-control" id="inputMessage" aria-describedby="message" placeholder="Lời nhắn" required>
+                            <input type="tel" class="form-control" id="inputTel" aria-describedby="tel" placeholder="Điện thoại" required>
+                            <input type="text" class="form-control" id="inputAddr" aria-describedby="address" placeholder="Địa chỉ" required>
+                            <div class="form-group styled-select">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option class="disable-opt" value="" selected disabled hidden>Nơi đăng ký khám</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                  </select>
+                            </div>
+                            <div class="d-flex justify-content-center"><button type="submit" class="btn btn-style"><span>ĐĂNG KÝ NGAY</span></button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="banner">
             <div><img class="img-fluid" src="./assets/images/banner-lasik@2x.png" alt=""></div>
             <div class="container">
@@ -60,24 +93,31 @@
                         <input type="tel" class="form-control" id="inputTel" aria-describedby="tel" placeholder="Điện thoại" required>
                         <input type="text" class="form-control" id="inputAddr" aria-describedby="address" placeholder="Địa chỉ" required>
                         <div class="form-group styled-select">
-                            <select class="select2-box form-control" id="type-question-select" required>
+                            <select class="form-select" aria-label="Default select example">
                                 <option class="disable-opt" value="" selected disabled hidden>Nơi đăng ký khám</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                              </select>
                         </div>
-                        <div class="d-flex justify-content-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                        <div class="d-flex justify-content-center"><button type="submit" class="btn btn-style"><span>ĐĂNG KÝ NGAY</span></button></div>
                     </form>
                 </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-modal-form btn btn-style" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span>ĐĂNG KÝ NGAY</span>
+                </button>
+
+
+
             </div>
             <div class="banner__popup d-flex flex-column justify-content-center align-items-center">
                 <div><img src="./assets/images/phone-popup.png" alt=""></div>
                 <div><img src="./assets/images/messenger-popup.png" alt=""></div>
             </div>
         </section>
-        <section class="surgicalMethod">
+        <section class="surgicalMethod" id="surgical-method">
             <div class="container">
                 <div class="surgicalMethod__subcontent">Hệ thống bệnh viện Mắt Sài Gòn với đội ngũ bác sĩ nhiều năm kinh nghiệm, sử dụng các công nghệ phẫu thuật Laser hiện đại, bảo hành 12 tháng, tái khám miễn phí. Bệnh viện đang áp dụng nhiều chương trình ưu đãi mổ cận thi, loạn thị, hỗ trợ
                     bạn sáng tầm nhìn, thỏa ước mơ.</div>
@@ -240,9 +280,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center mt-5 mb-4"><button type="submit" class="btn btn-style"><span>ĐĂNG KÝ NGAY</span></button></div>
             </div>
         </section>
-        <section class="review">
+        <section class="review" id="review-rate">
             <div class="main-content">TRẢI NGHIỆM VÀ ĐÁNH GIÁ</div>
             <div class="container">
                 <div class="mt-5 d-lg-flex justify-content-center align-items-center">
@@ -262,7 +303,7 @@
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section class="features" id="special-features">
             <div class="container">
                 <div class="main-content">VÌ SAO CHỌN MẮT SÀI GÒN?</div>
                 <div class="main-content2">Hệ thống Bệnh viện chuyên khoa Mắt lớn nhất Việt Nam</div>
@@ -321,7 +362,7 @@
                 </div>
             </div>
         </section>
-        <section class="humanResource">
+        <section class="humanResource" id="hr-doctor">
             <div class="container">
                 <div class="main-content">Đội ngũ Bác sĩ đầu ngành</div>
                 <div class="main-content2">Bác sĩ Giám đốc/ Giám đốc chuyên môn/ Trưởng khoa phẫu thuật khúc xạ được đào tạo bài bản tại Việt Nam và nước ngoài, nhiều năm kinh nghiệm, phẫu thuật trên 200.000 ca.</div>
@@ -417,7 +458,7 @@
                 </div>
             </div>
         </section>
-        <section class="equipment">
+        <section class="equipment" id="special-equip">
             <div class="container">
                 <div class="main-content text-center">MÁY MÓC VÀ THIẾT BỊ</div>
                 <div class="equipmentGrid">
@@ -456,7 +497,7 @@
                 </div>
             </div>
         </section>
-        <section class="question">
+        <section class="question" id="Q&A">
             <div class="container">
                 <div class="main-content text-uppercase text-center">Thắc mắc thường gặp khi<br> phẫu thuật khúc xạ bằng laser</div>
                 <div class="accordion" id="accordionExample">
@@ -555,7 +596,7 @@
                                   </select>
 
                             </div>
-                            <div class="d-flex justify-content-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                            <div class="d-flex justify-content-center"><button type="submit" class="btn btn-style"><span>Submit</span></button></div>
                         </form>
                     </div>
 
