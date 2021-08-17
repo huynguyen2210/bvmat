@@ -23,6 +23,7 @@ $(document).ready(function() {
             {
                 breakpoint: 576,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }

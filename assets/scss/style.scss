@@ -95,8 +95,11 @@ $align) {
 
 .btn-header {
     @include btn-decor();
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #008E47;
-    background-blend-mode: overlay, normal;
+    background: rgb(86, 252, 154);
+    background: -moz-linear-gradient(180deg, rgba(86, 252, 154, 1) 0%, rgba(62, 188, 100, 1) 48%, rgba(52, 162, 84, 1) 49%, rgba(60, 182, 99, 1) 99%);
+    background: -webkit-linear-gradient(180deg, rgba(86, 252, 154, 1) 0%, rgba(62, 188, 100, 1) 48%, rgba(52, 162, 84, 1) 49%, rgba(60, 182, 99, 1) 99%);
+    background: linear-gradient(180deg, rgba(86, 252, 154, 1) 0%, rgba(62, 188, 100, 1) 48%, rgba(52, 162, 84, 1) 49%, rgba(60, 182, 99, 1) 99%);
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#56fc9a", endColorstr="#3cb663", GradientType=1);
     border-radius: 100px;
     width: 297px;
     span {
@@ -114,7 +117,7 @@ $align) {
         display: block;
         position: absolute;
         left: 0;
-        bottom: -6px;
+        bottom: -5px;
         background: #FDCE25;
         box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
         border-radius: 43.24px;
@@ -124,7 +127,7 @@ $align) {
 
 .btn-style {
     @include btn-decor();
-    background: linear-gradient(180deg, rgba(250, 202, 72, 1) 0%, rgba(245, 165, 61, 1) 50%, rgba(250, 215, 110, 1) 100%);
+    background: linear-gradient(180deg, rgba(250, 202, 72, 1) 0%, rgba(245, 165, 61, 1) 50%, rgba(250, 215, 110, 1) 90%, rgb(242, 153, 74) 100%);
     box-shadow: 0px 4.15917px 8.31834px rgba(0, 0, 0, 0.14), 0px 8.31834px 10.3979px rgba(0, 0, 0, 0.12), 0px 2.07958px 20.7958px rgba(0, 0, 0, 0.2);
     border-radius: 37px;
     width: 195px;
@@ -157,7 +160,7 @@ ul {
     34px,
     center);
     @media screen and (max-width: 576px) {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -173,7 +176,10 @@ ul {
 .sub-content {
     @include sub-text( #fff,
     22px,
-    left)
+    left);
+    @media screen and (max-width: 576px) {
+        font-size: 18px;
+    }
 }
 
 .sub-content-18 {
@@ -295,6 +301,10 @@ form {
         right: 5%;
         bottom: 20%;
         transform: translate(50%, 20%);
+        @media screen and (max-width: 992px) {
+            bottom: 40%;
+            transform: translate(50%, 40%);
+        }
         div img {
             cursor: pointer;
             max-width: 80px;
@@ -312,18 +322,19 @@ form {
     }
     .btn-modal-form {
         display: none;
+        padding: 5px;
         @media screen and (max-width: 992px) {
             display: block;
-            position: absolute;
-            top: 50%;
-            left: 5%;
-            transform: translate(-10%, -50%);
+            // position: absolute;
+            // bottom: 5%;
+            // left: 50%;
+            // transform: translate(-50%, -5%);
         }
         @media screen and (max-width: 576px) {
-            width: 120px;
-            padding: 5px;
+            width: 125px;
+            padding: 0;
             span {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
@@ -336,11 +347,14 @@ form {
         22px,
         center);
         @media screen and (max-width: 576px) {
-            font-size: 18px;
+            font-size: 16px;
         }
     }
     &__maincontent {
         margin: 5rem 0 4rem;
+        @media screen and (max-width: 576px) {
+            margin: 3rem 0;
+        }
         &--left {
             & div:nth-of-type(1) {
                 @include main-text(#008E47,
@@ -371,11 +385,10 @@ form {
                     font-size: 33px;
                 }
                 @media screen and (max-width: 992px) {
-                    text-align: left;
+                    font-size: 42px;
                 }
                 @media screen and (max-width: 576px) {
                     font-size: 24px;
-                    text-align: center;
                 }
             }
             & div:nth-of-type(2) {
@@ -390,10 +403,10 @@ form {
                     font-size: 16px;
                 }
                 @media screen and (max-width: 992px) {
-                    text-align: left;
+                    font-size: 20px;
                 }
                 @media screen and (max-width: 576px) {
-                    text-align: center;
+                    font-size: 16px;
                 }
             }
             & div:nth-of-type(3) {
@@ -404,11 +417,17 @@ form {
                     @media screen and (min-width: 1920px) {
                         font-size: 56px;
                     }
-                    @media screen and (max-width: 576px) {
+                    @media screen and (max-width: 1024px) {
                         font-size: 38px;
                     }
-                    @media screen and (max-width: 1024px) {
+                    @media screen and (max-width: 992px) {
+                        font-size: 49px;
+                    }
+                    @media screen and (max-width: 576px) {
                         font-size: 26px;
+                    }
+                    @media screen and (max-width: 375px) {
+                        font-size: 24px;
                     }
                 }
             }
@@ -424,6 +443,9 @@ form {
                 @media screen and (max-width: 1024px) {
                     font-size: 54px;
                 }
+                @media screen and (max-width: 576px) {
+                    font-size: 43px;
+                }
             }
             & div:nth-of-type(2) span {
                 @include gradient-text();
@@ -433,6 +455,12 @@ form {
                     font-size: 56px;
                 }
                 @media screen and (max-width: 1024px) {
+                    font-size: 38px;
+                }
+                @media screen and (max-width: 992px) {
+                    font-size: 49px;
+                }
+                @media screen and (max-width: 576px) {
                     font-size: 38px;
                 }
             }
@@ -586,6 +614,7 @@ form {
 .review {
     background: linear-gradient(90deg, #008E47 1.43%, #20BD74 49.18%, #0B9054 100%);
     padding: 1rem 0 4rem;
+    overflow-x: hidden;
     .main-content {
         background: #FFF6A6;
         padding: 1.5rem 0;
@@ -600,6 +629,10 @@ form {
             background-size: contain;
             z-index: 2;
             float: left;
+            @media screen and (max-width: 576px) {
+                width: 390px;
+                height: 390px;
+            }
         }
         &--rotate {
             position: absolute;
@@ -611,7 +644,10 @@ form {
             top: 2rem;
             transform: rotate(13.34deg);
             z-index: 1;
-            // float: right;
+            @media screen and (max-width: 576px) {
+                width: 390px;
+                height: 390px;
+            }
         }
     }
     &__text {
@@ -676,6 +712,7 @@ form {
             padding: 0 2rem;
         }
         @media screen and (max-width: 576px) {
+            font-size: 18px;
             padding: 0 1rem;
         }
     }
@@ -748,6 +785,9 @@ form {
                 justify-content: center;
                 padding-bottom: 2rem;
                 border-bottom: 0.5px solid #000000;
+                @media screen and (max-width: 576px) {
+                    padding-bottom: 1rem;
+                }
             }
             &--text {
                 .equip-name {
@@ -755,7 +795,11 @@ form {
                     font-size: 26px;
                     margin-bottom: 1rem;
                     margin-top: 2rem;
-                    height: 4rem;
+                    height: 3rem;
+                    @media screen and (max-width: 576px) {
+                        margin-top: 1rem;
+                        height: 2rem;
+                    }
                 }
                 .equip-origin {
                     color: #008E47;
@@ -782,6 +826,9 @@ form {
     .accordion {
         max-width: 80%;
         margin: 1rem auto 0;
+        @media screen and (max-width: 576px) {
+            max-width: 90%;
+        }
         .accordion-item {
             background: none;
             border: none;
@@ -810,12 +857,20 @@ form {
                 &:focus {
                     box-shadow: none;
                 }
+                @media screen and (max-width: 576px) {
+                    font-size: 20px;
+                    padding: 1rem 0;
+                }
             }
             .accordion-body {
                 padding: 1rem 0 4rem;
                 @include sub-text(#000,
                 22px,
                 justify);
+                @media screen and (max-width: 576px) {
+                    font-size: 20px;
+                    padding: 0 0 2rem;
+                }
             }
         }
     }
