@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.50.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  }
+}
