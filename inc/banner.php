@@ -37,10 +37,5 @@
             </form>
         </div>
     </div>
-    <!-- Button trigger modal -->
-    <div class="py-3 text-center d-md-none">
-        <a class="btn-modal-form btn btn-style mx-auto d-inline-block" href="#zone-register">
-            <span>ĐĂNG KÝ NGAY</span>
-        </a>
-    </div>
+
 </section>

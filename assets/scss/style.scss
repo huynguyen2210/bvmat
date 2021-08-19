@@ -119,7 +119,7 @@ $align) {
     border-radius: 37px;
     padding: 15px 30px;
     font-size: 1.6rem;
-    min-width: 200px;
+    min-width: 150px;
     span {
         background-image: linear-gradient(to bottom, #fff 100%, #fff 0%, #FFF389);
         background-clip: text;
@@ -132,6 +132,12 @@ $align) {
     &:focus {
         border-color: none !important;
         box-shadow: none !important;
+    }
+
+    @media(max-width: 575px){
+        padding: 7px 20px;
+        font-size: 1.2rem;
+        border-radius: 20px;
     }
 }
 
@@ -228,7 +234,7 @@ form {
     .nav-item {
         .nav-link {
             @include sub-text(#299562,
-            14px,
+            16px,
             center);
             line-height: 1.5;
         }
@@ -248,17 +254,24 @@ form {
 
 .banner {
     position: relative;
-    .container {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        @media screen and (max-width: 1024px) {
-            top: 45%;
+    @media screen and (min-width: 992px) {
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            @media screen and (max-width: 1024px) {
+                top: 45%;
+            }
         }
+        &__form {
+            max-width: 325px;
+        }
+        
     }
+    
     &__form {
-        max-width: 378px;
+       
         padding: 40px 20px;
         background: #fff;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
@@ -280,11 +293,9 @@ form {
             padding: 0.5rem .75rem;
         }
 
-        @media screen and (max-width: 1366px) {
-            max-width: 325px;
-        }
-        @media screen and (max-width: 1024px) {
-            max-width: 290px;
+     
+        @media screen and (max-width: 991px) {
+            margin: 20px 0;
             padding: 15px;
             &--title {
                 margin-bottom: 20px;
@@ -293,9 +304,7 @@ form {
                 margin-top: 10px;
             }
         }
-        @media screen and (max-width: 992px) {
-            display: none;
-        }
+       
     }
     
     .btn-modal-form {
@@ -594,6 +603,11 @@ form {
     background: linear-gradient(90deg, #008E47 1.43%, #20BD74 49.18%, #0B9054 100%);
     padding: 1rem 0 4rem;
     overflow-x: hidden;
+
+    .slick-prev:before, .slick-next:before{
+        color: #FFF;
+    }
+
     .main-content {
         background: #FFF6A6;
         padding: 1.5rem 0;
@@ -602,7 +616,7 @@ form {
         position: relative;
         &--main {
             position: relative;
-            background: url(../images/review.png) left no-repeat;
+           
             width: 400px;
             height: 400px;
             background-size: contain;
@@ -615,12 +629,12 @@ form {
         }
         &--rotate {
             position: absolute;
-            background: url(../images/review.png) right no-repeat;
+            
             width: 400px;
             height: 400px;
             background-size: contain;
             right: 0;
-            top: 2rem;
+            top: 0;
             transform: rotate(13.34deg);
             z-index: 1;
             @media screen and (max-width: 576px) {
@@ -637,6 +651,15 @@ form {
         }
         &--content {
             text-align: justify;
+        }
+    }
+
+    @media(max-width: 575px){
+        .slick-prev{
+            left: 0;
+        }
+        .slick-next{
+            right: 0;
         }
     }
 }
@@ -837,6 +860,7 @@ form {
                 border: none;
                 background: none;
                 padding: 2rem 0;
+                font-weight: 700;
                 &:not(.collapsed) {
                     color: inherit;
                     background-color: none;
@@ -1018,6 +1042,10 @@ footer {
                 width: 35px;
             }
         }
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: 16px;
     }
 }
 

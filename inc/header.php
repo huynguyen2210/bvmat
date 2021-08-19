@@ -8,7 +8,7 @@
                 <span class="toggler-icon"><img src="./assets/images/icon/menu-24.png" alt=""></span>
             </a>
 
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav d-flex justify-content-around align-items-center w-100">
                     <li class="nav-item">
                         <a class="nav-link" href="#surgical-method">PHƯƠNG PHÁP<br/> PHẪU THUẬT</a>

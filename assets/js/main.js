@@ -138,4 +138,14 @@ $(document).ready(function() {
             },
         ]
     });
+
+    $('#kol-wrap-slide').slick({
+        infinite: false ,
+        slidesToShow: 1 ,
+        slidesToScroll: 1,
+        autoplay: true
+    });
+
+
+    
 });

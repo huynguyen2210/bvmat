@@ -11,7 +11,7 @@
             <div class="vertical-line"></div>
             <div class="surgicalMethod__maincontent--right d-flex flex-column justify-content-between">
                 <div class="text-center text-lg-start">Từ</div>
-                <div><span>01/07 - 30/07/2021</span></div>
+                <div><span>01/08 - 31/08/2021</span></div>
             </div>
         </div>
         <div class="surgicalMethod__grid">
