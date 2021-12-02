@@ -418,7 +418,6 @@ footer{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
         padding: 0 15px;
         justify-content: center;
     }
@@ -444,6 +443,7 @@ footer{
     @media (min-width: 768px) {
         .footer-wrap{
             padding: 0 80px;
+            justify-content: space-between;
         }
         .text-copy{
             margin-bottom: 0;

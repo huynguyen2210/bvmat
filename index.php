@@ -9,6 +9,25 @@
     $GTM_ID = 'GTM-M5WJPM';
     $FB_PIXEL_ID = '';
     $selected_language = isset($_GET['language']) ? $_GET['language'] : 'vi'; 
+
+    $language = [
+        'form_title' => [
+            'vi' => 'Nhận thông tin dự án',
+            'en' => 'Receive project information'
+        ],
+        'form_name' => [
+            'vi' => 'Họ và Tên (*)',
+            'en' => 'Name (*)'
+        ],
+        'form_phone' => [
+            'vi' => 'Điện thoại (*)',
+            'en' => 'Phone Number (*)'
+        ],
+        'form_send' => [
+            'vi' => 'ĐĂNG KÝ NGAY',
+            'en' => 'Register now'
+        ],
+    ]
 ?>
 <head>
     <meta charset="UTF-8">
