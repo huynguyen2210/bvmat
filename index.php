@@ -33,13 +33,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.min.css" />
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.min.css" />
     <link rel="stylesheet" href="./assets/css/animate.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -76,7 +78,10 @@
 
             <?php require_once("inc/banner.php") ?>
             <?php require_once("inc/block1.php") ?>
-
+            <?php require_once("inc/block2.php") ?>
+            <?php require_once("inc/block3.php") ?>
+            <?php require_once("inc/block4.php") ?>
+            <?php require_once("inc/block5.php") ?>
         </main>
         <?php require_once("inc/footer.php") ?> 
     </div><!-- end #page -->
