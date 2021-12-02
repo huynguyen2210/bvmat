@@ -61,7 +61,7 @@ $(document).ready(function() {
 
         jQuery.ajax({
   
-            url: 'https://adx.chinmedia.vn/api/v1/msg',
+            url: 'https://lead.chinmedia.vn/api/v1/msg',
             method: 'POST',
             data: data,
             beforeSend: function(){
