@@ -23,8 +23,7 @@ function getCookie(cname) {
 
 
 $(document).ready(function() {
-   
-
+    AOS.init();
     // Store cookie
     var url = new URL(window.location.href);
 

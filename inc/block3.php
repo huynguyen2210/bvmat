@@ -1,7 +1,7 @@
 <div id="block3">
     <div class="container">
         <div class="">
-            <h3 class="title-2 text-center">
+            <h3 data-aos="zoom-in" data-aos-duration="1500" class="title-2 text-center">
                 THÔNG TIN<br/>
                 DỰ ÁN
             </h3>
@@ -10,7 +10,7 @@
         <div class="mt-5">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <p class="block3-desc">
+                    <p data-aos="zoom-in" data-aos-duration="1500" class="block3-desc">
                         Tọa lạc tại vành đai 1 khu đô thị Thủ Thiêm, liền kề trung tâm thành phố, tiện nghi và hiện đại, 
                         mang dáng dấp một Phố Đông - Thượng Hải ngay trong lòng Sài Gòn, The River đang thiết lập chuẩn mới
                         về phong cách sống sang trọng. 
@@ -22,7 +22,7 @@
         <div class="mt-5">
             <div class="row align-items-stretch">
                 <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
-                    <div class="p-item">
+                    <div class="p-item " data-aos="fade-up" data-aos-duration="1500">
                         <figure>
                             <img src="/images/info1.jpg" />
                         </figure>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
-                    <div class="p-item">
+                    <div class="p-item" data-aos="fade-down" data-aos-duration="1500">
                         <figure>
                             <img src="/images/info2.jpg" />
                         </figure>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
-                    <div class="p-item">
+                    <div class="p-item" data-aos="fade-up" data-aos-duration="1500">
                         <figure>
                             <img src="/images/info3.jpg" />
                         </figure>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
-                    <div class="p-item">
+                    <div class="p-item" data-aos="fade-down" data-aos-duration="1500">
                         <figure>
                             <img src="/images/info4.jpg" />
                         </figure>

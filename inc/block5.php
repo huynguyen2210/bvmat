@@ -9,14 +9,14 @@ $slides = [
 ?>
 <div id="block5">
     <div class="container">
-        <div id="slide-bottom" class="">
+        <div id="slide-bottom" data-aos="fade-in" data-aos-duration="2000" class="">
             <?php foreach($slides as $slide): ?>
                 <div>
                     <img class="img-fluid" src="<?php echo $slide ?>"/>
                 </div>
             <?php endforeach?>
         </div>
-        <div id="bottom-form">
+        <div id="bottom-form" id="slide-bottom" data-aos="fade-up" data-aos-duration="2000">
             <?php include("inc/form.php") ?>
         </div>
         

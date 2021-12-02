@@ -1,6 +1,6 @@
 <section id="banner">
     <div class="container">
-        <div id="form-head-wrap">
+        <div data-aos="fade-right" data-aos-duration="1500" id="form-head-wrap">
             <?php require_once("inc/form.php") ?>
         </div>
     </div>
