@@ -1,17 +1,23 @@
 <?php 
 $slides = [
-    'img' => '/images/slideform.png'
+    '/images/slideform.png',
+    '/images/slideform1.jpg',
+    '/images/slideform2.jpg',
+    '/images/slideform3.jpg',
+    '/images/slideform4.jpg',
 ] 
 ?>
-<div id="block4">
+<div id="block5">
     <div class="container">
         <div id="slide-bottom" class="">
             <?php foreach($slides as $slide): ?>
-                <img src="<?php echo $slide ?>"/>
+                <div>
+                    <img class="img-fluid" src="<?php echo $slide ?>"/>
+                </div>
             <?php endforeach?>
         </div>
         <div id="bottom-form">
-            <?php require_once("inc/form.php") ?>
+            <?php include("inc/form.php") ?>
         </div>
         
     </div>

@@ -11,8 +11,8 @@
         </div>
         <div class="text-center mt-5">
             <img src="/images/logocitygarden.png" />
-            <p class="text-center">
-                <a href="" id="view-more">Tìm hiểu thêm về chủ đầu tư</a>
+            <p class="text-center mt-4">
+                <a href="https://refico.com.vn/vi/" target="_blank" id="view-more">Tìm hiểu thêm về chủ đầu tư</a>
             </p>
         </div>
     </div>

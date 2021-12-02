@@ -23,8 +23,7 @@ function getCookie(cname) {
 
 
 $(document).ready(function() {
-    var modalThankYou = new bootstrap.Modal(document.getElementById('popup-thankyou'))
-    var modalRegistered = new bootstrap.Modal(document.getElementById('popup-registered'))
+   
 
     // Store cookie
     var url = new URL(window.location.href);
@@ -46,7 +45,7 @@ $(document).ready(function() {
     }
 
 
-    $('.register-form .btn-send').on('click', function(e){
+    $('.btn-send').on('click', function(e){
         var form = $(this).closest('form');
         e.preventDefault();
         var data = $(form).serializeArray();
@@ -57,10 +56,9 @@ $(document).ready(function() {
         data.push({ name: 'utm_content', value: getCookie('utm_content') });
         data.push({ name: 'gclid', value: getCookie('gclid') });
 
-        $('.register-form .message').html('');
+        $(form).find('.message').html('');
 
         jQuery.ajax({
-  
             url: 'https://lead.chinmedia.vn/api/v1/msg',
             method: 'POST',
             data: data,
@@ -71,7 +69,6 @@ $(document).ready(function() {
                 $('body').removeClass('loading');
                 if( res.success ){
                     $(form)[0].reset();
-                    modalThankYou.show();
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
                         'event' : 'successRegistration',
@@ -79,11 +76,7 @@ $(document).ready(function() {
                     });
 
                 }else if( res.code == 'USER_REGISTERED' )  {
-                    
-                    
-                    $('#popup-registered #campaign-registered').html( res.marketing_program );
-                    modalRegistered.show();
-
+                    $(form).find('.message').html('Cám ơn bạn đã đăng ký');
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
                         'event' : 'duplicateRegistration',
@@ -106,44 +99,15 @@ $(document).ready(function() {
 
     })
 
-    
-    $(".nav-link").click(function() {
-        $(".close-icon").trigger("click");
-    });
 
-    $('.slider').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [{
-                breakpoint: 1440,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            }, {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    // arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-        ]
-    });
 
-    $('#kol-wrap-slide').slick({
+    $('#slide-bottom').slick({
         infinite: false ,
         slidesToShow: 1 ,
         slidesToScroll: 1,
-        autoplay: true
+        autoplay: false,
+        dots: true,
+        arrows: false
     });
 
 

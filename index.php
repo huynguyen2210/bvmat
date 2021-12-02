@@ -6,7 +6,7 @@
     $keyword = 'theriverthuthiem, the river thu thiem'; 
     $image = '';
     $url = 'https://theriverthuthiem.vn/';
-    $GTM_ID = '';
+    $GTM_ID = 'GTM-M5WJPM';
     $FB_PIXEL_ID = '';
     $selected_language = isset($_GET['language']) ? $_GET['language'] : 'vi'; 
 ?>
@@ -75,7 +75,6 @@
     <div id="page">
         <?php require_once("inc/header.php") ?>
         <main>
-
             <?php require_once("inc/banner.php") ?>
             <?php require_once("inc/block1.php") ?>
             <?php require_once("inc/block2.php") ?>
@@ -88,13 +87,13 @@
     <div id="loading" class="d-flex align-items-center justify-content-center">
         <img src="images/loading.gif" alt="">
     </div>
-    <?php require_once("inc/float_button.php") ?>
- 
-    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+   
+
+    <script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 
 </html>

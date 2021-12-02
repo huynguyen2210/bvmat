@@ -15,7 +15,7 @@
             id="input-phone" aria-describedby="Điện thoại" placeholder="Điện thoại (*)" required>
     
         <div class="">
-            <button type="button" class="btn-main"><span>ĐĂNG KÝ NGAY</span></button>
+            <button type="button" class="btn-main btn-send"><span>ĐĂNG KÝ NGAY</span></button>
         </div>
 
     </form>

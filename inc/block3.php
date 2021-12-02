@@ -21,7 +21,7 @@
 
         <div class="mt-5">
             <div class="row align-items-stretch">
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
                     <div class="p-item">
                         <figure>
                             <img src="/images/info1.jpg" />
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
                     <div class="p-item">
                         <figure>
                             <img src="/images/info2.jpg" />
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
                     <div class="p-item">
                         <figure>
                             <img src="/images/info3.jpg" />
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
                     <div class="p-item">
                         <figure>
                             <img src="/images/info4.jpg" />
@@ -82,9 +82,9 @@
         </div>
 
         <div class="mt-5 text-center">
-            <button class="btn-main">
+            <a href="#banner" class="scrol-to btn-main">
                 Nhận bảng giá ngay
-            </button>
+            </a>
         </div>
 
     </div>
