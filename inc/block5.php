@@ -16,7 +16,7 @@ $slides = [
                 </div>
             <?php endforeach?>
         </div>
-        <div id="bottom-form" id="slide-bottom" data-aos="fade-up" data-aos-duration="2000">
+        <div id="bottom-form" id="slide-bottom">
             <?php include("inc/form.php") ?>
         </div>
         

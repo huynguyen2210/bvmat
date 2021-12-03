@@ -58,7 +58,7 @@ $(document).ready(function() {
         $(form).find('.message').html('');
 
         jQuery.ajax({
-            url: 'https://lead.chinmedia.vn/api/v1/msg',
+            url: 'https://lead.chinmedia.vn/api/v1/lead/theriverthuthiem',
             method: 'POST',
             data: data,
             beforeSend: function(){
@@ -73,16 +73,9 @@ $(document).ready(function() {
                         'event' : 'successRegistration',
                         'phone' : res.phone
                     });
-
-                }else if( res.code == 'USER_REGISTERED' )  {
-                    $(form).find('.message').html('Cám ơn bạn đã đăng ký');
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({
-                        'event' : 'duplicateRegistration',
-                        'phone' : res.phone
-                    });
+                    window.location.href = '/success.php';
                 }
-             
+                
                 // $('#message').addClass('alert alert-success').html('Cám ơn bạn đã gửi dữ liệu thành công');
             },
             error: function( err ){
@@ -104,7 +97,7 @@ $(document).ready(function() {
         infinite: false ,
         slidesToShow: 1 ,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         dots: true,
         arrows: false
     });
